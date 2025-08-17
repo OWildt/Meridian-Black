@@ -62,61 +62,61 @@
 
   <div class="max-w-5xl mx-auto px-6"><div class="h-px w-full bg-gradient-to-r from-transparent via-white/15 to-transparent"></div></div>
 
-  <!-- MINI GAME -->
-  <section class="max-w-5xl mx-auto px-6 py-14">
-    <p class="uppercase tracking-widest text-xs text-zinc-400 mb-3">Play</p>
-    <h2 class="text-2xl md:text-3xl font-semibold mb-4">Whack-a-Bid — Ditlev Cocktail</h2>
-    <div class="glass rounded-xl p-6 space-y-4">
-      <p class="text-zinc-300 text-sm">Outbid the AI bidder for the last Ditlev cocktail. Whack the bid button as it pops up before the timer expires.</p>
-      <div class="grid md:grid-cols-2 gap-4 items-center">
-        <div class="glass rounded-lg p-4">
-          <h3 class="font-semibold mb-2">Lot: Ditlev Cocktail</h3>
-          <div class="flex items-center gap-4 text-sm text-zinc-300">
-            <div>⏱️ Time: <span id="time">30</span>s</div>
-            <div>💸 Current Bid: <span id="bid">100</span> cr</div>
-          </div>
-          <div class="mt-2 text-sm text-zinc-300">Leader: <span id="leader" class="font-semibold">—</span></div>
-          <div class="mt-4 flex gap-3">
-            <button id="start" class="px-3 py-2 rounded-lg ring-soft hover:bg-white/10 transition">Start Auction</button>
-          </div>
-          <div id="gameBoard" class="relative h-32 mt-4 ring-soft rounded-lg">
-            <button id="bidBtn" class="px-3 py-2 rounded-lg ring-soft hover:bg-white/10 transition absolute hidden">Bid +10</button>
-          </div>
-          <div id="result" class="mt-3 text-sm"></div>
-        </div>
-        <div class="glass rounded-lg p-3 poster flex items-center justify-center">
-          <!-- Simple SVG image for the cocktail -->
-          <svg viewBox="0 0 300 380" class="w-full h-full rounded-md">
-            <rect width="300" height="380" fill="#0A0A0A"/>
-            <g stroke="#8AA0FF" stroke-width="4" fill="none" stroke-linejoin="round">
-              <path d="M75 60 L225 60 L150 160 Z"/>
-              <line x1="150" y1="160" x2="150" y2="300"/>
-              <line x1="110" y1="300" x2="190" y2="300"/>
-            </g>
-          </svg>
+    <!-- BROADCAST (no copy button) -->
+    <section class="max-w-5xl mx-auto px-6 py-14">
+      <p class="uppercase tracking-widest text-xs text-zinc-400 mb-3">Public Notice</p>
+      <h2 class="text-2xl md:text-3xl font-semibold mb-4">City-Band Broadcast // Opening Night</h2>
+      <div class="glass rounded-xl p-6 space-y-4">
+        <h3 class="text-xl font-semibold">MERIDIAN BLACK — A contemporary auction house for future rarities</h3>
+        <div class="text-sm text-zinc-300">📍 <strong>Kokkedawn</strong> &nbsp;·&nbsp; 📅 <strong>8 Nov</strong> &nbsp;·&nbsp; ⏰ <strong>18:00</strong></div>
+        <p><strong>Statement (382 AAI):</strong> Founded in 379 AAI during a blackout sale on the prime meridian, <strong>Meridian Black</strong> returns high craft and precise records to Old Earth. We present human-made work with cryptographically attested provenance and settle on audited ledgers. Our floor is human-only—born individuals inside the hall; advisors and AIs consult off-floor. Glamour, discretion, and exact custody define the house.</p>
+        <p>Evening format: <strong>silent preview on arrival</strong>, followed by <strong>live call</strong> conducted under compliance monitoring. Floor access requires identity hash match to the invite ledger. The hall is camera-quiet; records are issued post-sale.</p>
+        <div class="rounded-lg border border-white/10 p-4 bg-black/30">
+          <p class="text-sm"><strong>Opening night by invitation only.</strong> Coordinates are transmitted privately to listed guests.</p>
+          <p class="text-sm mt-2"><strong>Dress code:</strong> neo-noir formal / retrofuturist couture—ink-black tailoring, chrome accents, midnight jewel tones; veils, gloves, clean lines.</p>
         </div>
       </div>
-    </div>
-  </section>
-  <div class="max-w-5xl mx-auto px-6"><div class="h-px w-full bg-gradient-to-r from-transparent via-white/15 to-transparent"></div></div>
+    </section>
 
-  <!-- BROADCAST (no copy button) -->
-  <section class="max-w-5xl mx-auto px-6 py-14">
-    <p class="uppercase tracking-widest text-xs text-zinc-400 mb-3">Public Notice</p>
-    <h2 class="text-2xl md:text-3xl font-semibold mb-4">City-Band Broadcast // Opening Night</h2>
-    <div class="glass rounded-xl p-6 space-y-4">
-      <h3 class="text-xl font-semibold">MERIDIAN BLACK — A contemporary auction house for future rarities</h3>
-      <div class="text-sm text-zinc-300">📍 <strong>Kokkedawn</strong> &nbsp;·&nbsp; 📅 <strong>8 Nov</strong> &nbsp;·&nbsp; ⏰ <strong>18:00</strong></div>
-      <p><strong>Statement (382 AAI):</strong> Founded in 379 AAI during a blackout sale on the prime meridian, <strong>Meridian Black</strong> returns high craft and precise records to Old Earth. We present human-made work with cryptographically attested provenance and settle on audited ledgers. Our floor is human-only—born individuals inside the hall; advisors and AIs consult off-floor. Glamour, discretion, and exact custody define the house.</p>
-      <p>Evening format: <strong>silent preview on arrival</strong>, followed by <strong>live call</strong> conducted under compliance monitoring. Floor access requires identity hash match to the invite ledger. The hall is camera-quiet; records are issued post-sale.</p>
-      <div class="rounded-lg border border-white/10 p-4 bg-black/30">
-        <p class="text-sm"><strong>Opening night by invitation only.</strong> Coordinates are transmitted privately to listed guests.</p>
-        <p class="text-sm mt-2"><strong>Dress code:</strong> neo-noir formal / retrofuturist couture—ink-black tailoring, chrome accents, midnight jewel tones; veils, gloves, clean lines.</p>
+    <div class="max-w-5xl mx-auto px-6"><div class="h-px w-full bg-gradient-to-r from-transparent via-white/15 to-transparent"></div></div>
+
+    <!-- MINI GAME -->
+    <section class="max-w-5xl mx-auto px-6 py-14">
+      <p class="uppercase tracking-widest text-xs text-zinc-400 mb-3">Play</p>
+      <h2 class="text-2xl md:text-3xl font-semibold mb-4">Whack-a-Bid — Ditlev Cocktail</h2>
+      <div class="glass rounded-xl p-6 space-y-4">
+        <p class="text-zinc-300 text-sm">Outbid the AI bidder for the last Ditlev cocktail. Whack the bid button as it pops up before the timer expires.</p>
+        <div class="grid md:grid-cols-2 gap-4 items-center">
+          <div class="glass rounded-lg p-4">
+            <h3 class="font-semibold mb-2">Lot: Ditlev Cocktail</h3>
+            <div class="flex items-center gap-4 text-sm text-zinc-300">
+              <div>⏱️ Time: <span id="time">30</span>s</div>
+              <div>💸 Current Bid: <span id="bid">100</span> cr</div>
+            </div>
+            <div class="mt-2 text-sm text-zinc-300">Leader: <span id="leader" class="font-semibold">—</span></div>
+            <div class="mt-4 flex gap-3">
+              <button id="start" class="px-3 py-2 rounded-lg ring-soft hover:bg-white/10 transition">Start Auction</button>
+            </div>
+            <div id="gameBoard" class="relative h-32 mt-4 ring-soft rounded-lg">
+              <button id="bidBtn" class="px-3 py-2 rounded-lg ring-soft hover:bg-white/10 transition absolute hidden">Bid +10</button>
+            </div>
+            <div id="result" class="mt-3 text-sm"></div>
+          </div>
+          <div class="glass rounded-lg p-3 poster flex items-center justify-center">
+            <!-- Simple SVG image for the cocktail -->
+            <svg viewBox="0 0 300 380" class="w-full h-full rounded-md">
+              <rect width="300" height="380" fill="#0A0A0A"/>
+              <g stroke="#8AA0FF" stroke-width="4" fill="none" stroke-linejoin="round">
+                <path d="M75 60 L225 60 L150 160 Z"/>
+                <line x1="150" y1="160" x2="150" y2="300"/>
+                <line x1="110" y1="300" x2="190" y2="300"/>
+              </g>
+            </svg>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <div class="max-w-5xl mx-auto px-6"><div class="h-px w-full bg-gradient-to-r from-transparent via-white/15 to-transparent"></div></div>
+    </section>
+    <div class="max-w-5xl mx-auto px-6"><div class="h-px w-full bg-gradient-to-r from-transparent via-white/15 to-transparent"></div></div>
 
 
   <!-- UNIVERSE (bottom, subtle) -->
