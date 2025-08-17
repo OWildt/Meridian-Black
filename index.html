@@ -74,6 +74,42 @@
 
   <div class="max-w-5xl mx-auto px-6"><div class="h-px w-full bg-gradient-to-r from-transparent via-white/15 to-transparent"></div></div>
 
+  <!-- MINI GAME -->
+  <section class="max-w-5xl mx-auto px-6 py-14">
+    <p class="uppercase tracking-widest text-xs text-zinc-400 mb-3">Play</p>
+    <h2 class="text-2xl md:text-3xl font-semibold mb-4">Whack-a-Bid — Ditlev Cocktail</h2>
+    <div class="glass rounded-xl p-6 space-y-4">
+      <p class="text-zinc-300 text-sm">Outbid the AI bidder for the last 2025 Ditlev cocktail. Whack the bid button as it pops up before the timer expires.</p>
+      <div class="grid md:grid-cols-2 gap-4 items-center">
+        <div class="glass rounded-lg p-4">
+          <h3 class="font-semibold mb-2">Lot: 2025 Ditlev Cocktail</h3>
+          <div class="flex items-center gap-4 text-sm text-zinc-300">
+            <div>⏱️ Time: <span id="time">30</span>s</div>
+            <div>💸 Current Bid: <span id="bid">100</span> cr</div>
+          </div>
+          <div class="mt-2 text-sm text-zinc-300">Leader: <span id="leader" class="font-semibold">—</span></div>
+          <div class="mt-4 flex gap-3">
+            <button id="start" class="px-3 py-2 rounded-lg ring-soft hover:bg-white/10 transition">Start Auction</button>
+          </div>
+          <div id="gameBoard" class="relative h-32 mt-4 ring-soft rounded-lg">
+            <button id="bidBtn" class="px-3 py-2 rounded-lg ring-soft hover:bg-white/10 transition absolute hidden">Bid +10</button>
+          </div>
+          <div id="result" class="mt-3 text-sm"></div>
+        </div>
+        <div class="glass rounded-lg p-3 poster flex items-center justify-center">
+          <!-- Simple SVG image for the cocktail -->
+          <svg viewBox="0 0 300 380" class="w-full h-full rounded-md">
+            <rect width="300" height="380" fill="#0A0A0A"/>
+            <g stroke="#8AA0FF" stroke-width="4" fill="none" stroke-linejoin="round">
+              <path d="M75 60 L225 60 L150 160 Z"/>
+              <line x1="150" y1="160" x2="150" y2="300"/>
+              <line x1="110" y1="300" x2="190" y2="300"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- GALLERY: Posters / Pictures -->
   <section class="max-w-5xl mx-auto px-6 py-14">
     <p class="uppercase tracking-widest text-xs text-zinc-400 mb-3">Preview Stills</p>
@@ -167,51 +203,6 @@
 
   <div class="max-w-5xl mx-auto px-6"><div class="h-px w-full bg-gradient-to-r from-transparent via-white/15 to-transparent"></div></div>
 
-  <!-- MINI GAME -->
-  <section class="max-w-5xl mx-auto px-6 py-14">
-    <p class="uppercase tracking-widest text-xs text-zinc-400 mb-3">Play</p>
-    <h2 class="text-2xl md:text-3xl font-semibold mb-4">Paddle Duel — Mini Auction Game</h2>
-    <div class="glass rounded-xl p-6 space-y-4">
-      <p class="text-zinc-300 text-sm">Outbid the House Proxy before the timer expires. Each bid raises the price. Highest bid at 0:00 wins.</p>
-      <div class="grid md:grid-cols-2 gap-4 items-center">
-        <div class="glass rounded-lg p-4">
-          <h3 class="font-semibold mb-2">Lot: Mirror‑Veil Prototype</h3>
-          <div class="flex items-center gap-4 text-sm text-zinc-300">
-            <div>⏱️ Time: <span id="time">30</span>s</div>
-            <div>💸 Current Bid: <span id="bid">100</span> cr</div>
-          </div>
-          <div class="mt-2 text-sm text-zinc-300">Leader: <span id="leader" class="font-semibold">—</span></div>
-          <div class="mt-4 flex gap-3">
-            <button id="start" class="px-3 py-2 rounded-lg ring-soft hover:bg-white/10 transition">Start Auction</button>
-            <button id="bidBtn" class="px-3 py-2 rounded-lg ring-soft hover:bg-white/10 transition" disabled>Bid +10</button>
-          </div>
-          <div id="result" class="mt-3 text-sm"></div>
-        </div>
-        <div class="glass rounded-lg p-3 poster flex items-center justify-center">
-          <!-- Simple SVG image for the lot -->
-          <svg viewBox="0 0 300 380" class="w-full h-full rounded-md">
-            <defs>
-              <linearGradient id="veil" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#3A3A3A"/>
-                <stop offset="100%" stop-color="#0A0A0A"/>
-              </linearGradient>
-            </defs>
-            <rect width="300" height="380" fill="url(#veil)"/>
-            <g>
-              <rect x="60" y="60" width="180" height="260" fill="#111" stroke="#8AA0FF" stroke-opacity="0.6"/>
-              <rect x="75" y="80" width="150" height="220" fill="#0f0f0f" stroke="#FFFFFF22"/>
-              <path d="M75,180 Q150,120 225,180" stroke="#8AA0FF" stroke-opacity="0.5" fill="none"/>
-              <path d="M75,210 Q150,150 225,210" stroke="#8AA0FF" stroke-opacity="0.4" fill="none"/>
-              <path d="M75,240 Q150,180 225,240" stroke="#8AA0FF" stroke-opacity="0.3" fill="none"/>
-            </g>
-            <text x="150" y="340" text-anchor="middle" fill="#A0A0A0" font-size="12" font-family="ui-sans-serif, system-ui">Mirror‑Veil Prototype</text>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="max-w-5xl mx-auto px-6"><div class="h-px w-full bg-gradient-to-r from-transparent via-white/15 to-transparent"></div></div>
 
   <!-- UNIVERSE (bottom, subtle) -->
   <section class="max-w-5xl mx-auto px-6 py-14">
@@ -253,6 +244,7 @@
     (function() {
       const startBtn = document.getElementById('start');
       const bidBtn = document.getElementById('bidBtn');
+      const board = document.getElementById('gameBoard');
       const timeEl = document.getElementById('time');
       const bidEl = document.getElementById('bid');
       const leaderEl = document.getElementById('leader');
@@ -263,6 +255,7 @@
       let leader = null;
       let running = false;
       let aiInterval = null;
+      let moleInterval = null;
 
       function reset() {
         time = 30;
@@ -274,21 +267,25 @@
         leaderEl.textContent = leader;
         resultEl.textContent = '';
         bidBtn.disabled = true;
+        bidBtn.classList.add('hidden');
         startBtn.disabled = false;
         startBtn.textContent = 'Start Auction';
         if (timer) clearInterval(timer);
         if (aiInterval) clearInterval(aiInterval);
+        if (moleInterval) clearInterval(moleInterval);
       }
 
       function endAuction() {
         running = false;
         clearInterval(timer);
         clearInterval(aiInterval);
+        clearInterval(moleInterval);
         bidBtn.disabled = true;
+        bidBtn.classList.add('hidden');
         if (leader === 'You') {
           resultEl.innerHTML = '<span class="text-emerald-400 font-semibold">SOLD.</span> You won the lot.';
-        } else if (leader === 'House Proxy') {
-          resultEl.innerHTML = '<span class="text-rose-400 font-semibold">OUTBID.</span> The House Proxy takes the lot.';
+        } else if (leader === 'AI Bidder') {
+          resultEl.innerHTML = '<span class="text-rose-400 font-semibold">OUTBID.</span> The AI Bidder mixes the cocktail.';
         } else {
           resultEl.innerHTML = '<span class="text-zinc-300">No sale.</span>';
         }
@@ -302,18 +299,31 @@
         const urgency = (31 - time) / 30;
         if (chance < 0.25 + urgency * 0.35) {
           currentBid += 10 + Math.floor(Math.random() * 20);
-          leader = 'House Proxy';
+          leader = 'AI Bidder';
           bidEl.textContent = currentBid;
           leaderEl.textContent = leader;
         }
+      }
+
+      function moveMole() {
+        const rect = board.getBoundingClientRect();
+        const w = bidBtn.offsetWidth;
+        const h = bidBtn.offsetHeight;
+        const x = Math.random() * (rect.width - w);
+        const y = Math.random() * (rect.height - h);
+        bidBtn.style.left = x + 'px';
+        bidBtn.style.top = y + 'px';
       }
 
       startBtn.addEventListener('click', function() {
         reset();
         running = true;
         bidBtn.disabled = false;
+        bidBtn.classList.remove('hidden');
         startBtn.textContent = 'Auction Running...';
         startBtn.disabled = true;
+        moveMole();
+        moleInterval = setInterval(moveMole, 700);
         timer = setInterval(function() {
           time -= 1;
           timeEl.textContent = time;
@@ -328,6 +338,7 @@
         leader = 'You';
         bidEl.textContent = currentBid;
         leaderEl.textContent = leader;
+        moveMole();
       });
     })();
   </script>
