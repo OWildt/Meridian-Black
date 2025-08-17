@@ -36,30 +36,16 @@
   </header>
 
   <!-- HERO -->
-  <section class="relative">
-    <div class="max-w-6xl mx-auto px-6 pt-16 pb-12 grid md:grid-cols-2 gap-8 items-center">
-      <div>
-        <div class="flex items-center gap-2 text-xs text-zinc-400 mb-3">
-          <span class="px-2 py-1 rounded-full ring-soft">Old Earth</span>
-          <span>Year 382 AAI</span>
-        </div>
-        <h1 class="text-3xl md:text-5xl font-semibold leading-tight">Auction Rooms at the Edge of Light</h1>
-        <p class="mt-4 text-zinc-300 max-w-prose">
-          Meridian Black operates where craft meets code—an Old Earth auction house dedicated to human-made work with exact provenance, conducted with evening formality and permanent records.
-        </p>
-        <div class="mt-6 flex flex-wrap items-center gap-3 text-sm text-zinc-300">
-          <span>📍 <strong>Kokkedawn</strong></span>
-          <span>📅 <strong>8 Nov</strong></span>
-          <span>⏰ <strong>18:00</strong></span>
-        </div>
+  <section class="relative flex items-center justify-center min-h-[calc(100vh-3.5rem)] text-center">
+    <div class="space-y-6">
+      <div class="relative w-20 h-20 mx-auto">
+        <span class="absolute inset-0 rounded-full bg-white/5"></span>
+        <span class="absolute left-1/2 -translate-x-1/2 h-full w-px bg-gradient-to-b from-zinc-300/80 via-white to-zinc-300/80"></span>
+        <span class="absolute inset-0 rounded-full ring-1 ring-white/15"></span>
       </div>
-      <div class="md:pl-8">
-        <div class="glass rounded-xl p-5">
-          <h3 class="font-semibold mb-2">Floor Policy (Summary)</h3>
-          <p class="text-sm text-zinc-300">Born individuals only inside the hall—no remote avatars, synthetic bodies, or vessel proxies. Advisors and AIs may consult off-floor.</p>
-          <p class="text-sm text-zinc-300 mt-2">Authentication & settlement on audited ledgers. Discretion standard; records of sale issued post-event.</p>
-        </div>
-      </div>
+      <h1 class="text-4xl md:text-6xl font-semibold tracking-wide">MERIDIAN BLACK</h1>
+      <p class="text-lg md:text-2xl text-zinc-300">Opening Soon</p>
+      <div id="countdown" class="font-mono text-xl md:text-2xl"></div>
     </div>
   </section>
 
@@ -165,6 +151,30 @@
       <p class="text-xs text-zinc-500">© 382 AAI Meridian Black Auction Rooms</p>
     </div>
   </footer>
+  <script>
+    // Countdown to 8 Nov 18:00
+    (function() {
+      const target = new Date('2024-11-08T18:00:00');
+      const el = document.getElementById('countdown');
+      if (!el) return;
+      function update() {
+        const now = new Date();
+        const diff = target - now;
+        if (diff <= 0) {
+          el.textContent = '0d 0h 0m 0s';
+          clearInterval(timer);
+          return;
+        }
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(diff / (1000 * 60 * 60)) % 24;
+        const minutes = Math.floor(diff / (1000 * 60)) % 60;
+        const seconds = Math.floor(diff / 1000) % 60;
+        el.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+      }
+      update();
+      const timer = setInterval(update, 1000);
+    })();
+  </script>
 
   <script>
     // Mini-game logic
