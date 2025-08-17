@@ -8,10 +8,10 @@
   <!-- Tailwind via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Subtle noir gradient background */
     body { background: radial-gradient(60% 60% at 50% -10%, rgba(120,120,255,0.10), transparent 60%), #000; }
     .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.12); }
     .ring-soft { box-shadow: 0 0 0 1px rgba(255,255,255,0.10) inset; }
+    .poster { aspect-ratio: 4/5; }
   </style>
 </head>
 <body class="text-zinc-100 antialiased">
@@ -43,11 +43,10 @@
         <p class="mt-4 text-zinc-300 max-w-prose">
           Meridian Black operates where craft meets code—an Old Earth auction house dedicated to human-made work with exact provenance, conducted with evening formality and permanent records.
         </p>
-        <!-- Replace placeholders with your real details -->
         <div class="mt-6 flex flex-wrap items-center gap-3 text-sm text-zinc-300">
           <span>📍 <strong>Kokkedawn</strong></span>
-          <span>📅 <strong>8/11</strong></span>
-          <span>⏰ <strong>1800</strong></span>
+          <span>📅 <strong>8 Nov</strong></span>
+          <span>⏰ <strong>18:00</strong></span>
         </div>
       </div>
       <div class="md:pl-8">
@@ -62,58 +61,163 @@
 
   <div class="max-w-5xl mx-auto px-6"><div class="h-px w-full bg-gradient-to-r from-transparent via-white/15 to-transparent"></div></div>
 
-  <!-- UNIVERSE -->
+  <!-- GALLERY: Posters / Pictures -->
   <section class="max-w-5xl mx-auto px-6 py-14">
-    <p class="uppercase tracking-widest text-xs text-zinc-400 mb-3">Context: Old Earth, 382 AAI</p>
-    <h2 class="text-2xl md:text-3xl font-semibold mb-4">The Universe (Plain Language)</h2>
-    <div class="text-zinc-300 leading-relaxed space-y-4">
-      <p><strong>“After AI” (AAI)</strong> counts from the year general artificial intelligence became basic infrastructure. In <strong>378 AAI</strong>, vessel technology—long-range living ships and remote bodies—moved commerce and culture off‑world. Earth quieted but endured.</p>
-      <p>Today, cities run on light and ledger. <em>Fashion is firmware</em>: textiles negotiate privacy; jewelry carries encrypted keys; scent can unlock a stored memory. Art and devices are co-authored by makers and models; ownership is tracked on public ledgers; identity is verified by hash.</p>
-      <p>Entrepreneurship on Old Earth faded while vessels took the spotlight. <strong>Meridian Black</strong> celebrates those who stayed—makers and founders working with real materials in real gravity.</p>
-    </div>
-  </section>
+    <p class="uppercase tracking-widest text-xs text-zinc-400 mb-3">Preview Stills</p>
+    <h2 class="text-2xl md:text-3xl font-semibold mb-6">The Room, The City, The Seal</h2>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <!-- Poster 1: City at Midnight -->
+      <div class="glass rounded-xl p-3 poster flex items-center justify-center">
+        <svg viewBox="0 0 300 380" class="w-full h-full rounded-lg">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#8AA0FF" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <rect width="300" height="380" fill="url(#g1)"/>
+          <g fill="#0A0A0A">
+            <rect x="10" y="120" width="40" height="240" />
+            <rect x="60" y="90" width="50" height="270" />
+            <rect x="120" y="140" width="60" height="220" />
+            <rect x="190" y="110" width="45" height="250" />
+            <rect x="240" y="160" width="50" height="200" />
+          </g>
+          <g fill="#FFFFFF" opacity="0.45">
+            <rect x="70" y="110" width="6" height="10"/><rect x="85" y="110" width="6" height="10"/><rect x="100" y="110" width="6" height="10"/>
+            <rect x="70" y="130" width="6" height="10"/><rect x="85" y="130" width="6" height="10"/><rect x="100" y="130" width="6" height="10"/>
+            <rect x="70" y="150" width="6" height="10"/><rect x="85" y="150" width="6" height="10"/><rect x="100" y="150" width="6" height="10"/>
+          </g>
+          <text x="18" y="40" fill="#E6E6E6" font-size="18" font-family="ui-sans-serif, system-ui">CITY // MIDNIGHT</text>
+          <text x="18" y="60" fill="#A0A0A0" font-size="12" font-family="ui-sans-serif, system-ui">Mirror-polished lines, rain, light.</text>
+        </svg>
+      </div>
 
-  <!-- BACKSTORY -->
-  <section class="max-w-5xl mx-auto px-6 pb-14">
-    <p class="uppercase tracking-widest text-xs text-zinc-400 mb-3">Founded 379 AAI</p>
-    <h2 class="text-2xl md:text-3xl font-semibold mb-4">House Backstory</h2>
-    <div class="text-zinc-300 leading-relaxed space-y-4">
-      <p>During a city power‑shed along the prime meridian, a circle of Earth‑based patrons staged a private sale. Lots were human‑made with verifiable custody; bids were settled on a cold, audited ledger. The success—and the mood of that night—became the model.</p>
-      <p>Incorporated as <strong>Meridian Black</strong>, the house restores a high‑standards marketplace to Old Earth: glamorous, discreet, rigorous. Our symbol—a thin meridian through a dark circle—marks our gavel, plinth plaques, and encrypted seals of sale.</p>
+      <!-- Poster 2: Meridian Seal -->
+      <div class="glass rounded-xl p-3 poster flex items-center justify-center">
+        <svg viewBox="0 0 300 380" class="w-full h-full rounded-lg">
+          <rect width="300" height="380" fill="#0A0A0A"/>
+          <circle cx="150" cy="190" r="110" fill="#090909" stroke="white" stroke-opacity="0.25" />
+          <rect x="149.5" y="80" width="1" height="220" fill="url(#linegrad)"/>
+          <defs>
+            <linearGradient id="linegrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#DADADA"/>
+              <stop offset="50%" stop-color="#FFFFFF"/>
+              <stop offset="100%" stop-color="#DADADA"/>
+            </linearGradient>
+          </defs>
+          <text x="50%" y="50" text-anchor="middle" fill="#E6E6E6" font-size="18" font-family="ui-sans-serif, system-ui">MERIDIAN BLACK</text>
+          <text x="50%" y="340" text-anchor="middle" fill="#A0A0A0" font-size="12" font-family="ui-sans-serif, system-ui">Seal of Sale · 382 AAI</text>
+        </svg>
+      </div>
+
+      <!-- Poster 3: Couture Tech -->
+      <div class="glass rounded-xl p-3 poster flex items-center justify-center">
+        <svg viewBox="0 0 300 380" class="w-full h-full rounded-lg">
+          <defs>
+            <linearGradient id="mesh" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#1A1A1A"/>
+              <stop offset="100%" stop-color="#0A0A0A"/>
+            </linearGradient>
+          </defs>
+          <rect width="300" height="380" fill="url(#mesh)"/>
+          <g stroke="#B3C0FF" stroke-opacity="0.7" fill="none">
+            <path d="M20,300 C100,220 200,340 280,260" />
+            <path d="M20,260 C100,180 200,300 280,220" />
+            <path d="M20,220 C100,140 200,260 280,180" />
+            <path d="M20,180 C100,100 200,220 280,140" />
+          </g>
+          <text x="18" y="40" fill="#E6E6E6" font-size="18" font-family="ui-sans-serif, system-ui">COUTURE // TECH</text>
+          <text x="18" y="60" fill="#A0A0A0" font-size="12" font-family="ui-sans-serif, system-ui">Fabrics with agency. Quiet power.</text>
+        </svg>
+      </div>
     </div>
   </section>
 
   <div class="max-w-5xl mx-auto px-6"><div class="h-px w-full bg-gradient-to-r from-transparent via-white/15 to-transparent"></div></div>
 
-  <!-- BROADCAST -->
+  <!-- BROADCAST (no copy button) -->
   <section class="max-w-5xl mx-auto px-6 py-14">
     <p class="uppercase tracking-widest text-xs text-zinc-400 mb-3">Public Notice</p>
-    <h2 class="text-2xl md:text-3xl font-semibold mb-4">City‑Band Broadcast // Opening Night</h2>
+    <h2 class="text-2xl md:text-3xl font-semibold mb-4">City-Band Broadcast // Opening Night</h2>
     <div class="glass rounded-xl p-6 space-y-4">
       <h3 class="text-xl font-semibold">MERIDIAN BLACK — A contemporary auction house for future rarities</h3>
-      <div class="text-sm text-zinc-300">📍 <strong>[CITY]</strong> &nbsp;·&nbsp; 📅 <strong>[DATE]</strong> &nbsp;·&nbsp; ⏰ <strong>[TIME]</strong></div>
-      <p><strong>Statement (382 AAI):</strong> Founded in 379 AAI during a blackout sale on the prime meridian, <strong>Meridian Black</strong> returns high craft and precise records to Old Earth. We present human‑made work with cryptographically attested provenance and settle on audited ledgers. Our floor is human‑only—born individuals inside the hall; advisors and AIs consult off‑floor. Glamour, discretion, and exact custody define the house.</p>
-      <p>Evening format: <strong>silent preview on arrival</strong>, followed by <strong>live call</strong> conducted under compliance monitoring. Floor access requires identity hash match to the invite ledger. The hall is camera‑quiet; records are issued post‑sale.</p>
+      <div class="text-sm text-zinc-300">📍 <strong>Kokkedawn</strong> &nbsp;·&nbsp; 📅 <strong>8 Nov</strong> &nbsp;·&nbsp; ⏰ <strong>18:00</strong></div>
+      <p><strong>Statement (382 AAI):</strong> Founded in 379 AAI during a blackout sale on the prime meridian, <strong>Meridian Black</strong> returns high craft and precise records to Old Earth. We present human-made work with cryptographically attested provenance and settle on audited ledgers. Our floor is human-only—born individuals inside the hall; advisors and AIs consult off-floor. Glamour, discretion, and exact custody define the house.</p>
+      <p>Evening format: <strong>silent preview on arrival</strong>, followed by <strong>live call</strong> conducted under compliance monitoring. Floor access requires identity hash match to the invite ledger. The hall is camera-quiet; records are issued post-sale.</p>
       <div class="rounded-lg border border-white/10 p-4 bg-black/30">
         <p class="text-sm"><strong>Opening night by invitation only.</strong> Coordinates are transmitted privately to listed guests.</p>
-        <p class="text-sm mt-2"><strong>Dress code:</strong> neo‑noir formal / retrofuturist couture—ink‑black tailoring, chrome accents, midnight jewel tones; veils, gloves, clean lines.</p>
+        <p class="text-sm mt-2"><strong>Dress code:</strong> neo-noir formal / retrofuturist couture—ink-black tailoring, chrome accents, midnight jewel tones; veils, gloves, clean lines.</p>
       </div>
-      <div class="pt-2">
-        <button id="copyBtn" class="px-3 py-2 text-sm rounded-lg ring-soft hover:bg-white/10 transition">Copy broadcast text</button>
-      </div>
-      <pre id="broadcastText" class="text-xs md:text-sm whitespace-pre-wrap glass rounded-lg p-4 text-zinc-300">
-CITY-BAND BROADCAST // OPENING NIGHT
-MERIDIAN BLACK — A contemporary auction house for future rarities
-[CITY] — [DATE], [TIME]
-
-Statement (382 AAI): Founded in 379 AAI during a blackout sale on the prime meridian, Meridian Black returns high craft and precise records to Old Earth. We present human-made work with cryptographically attested provenance and settle on audited ledgers. Our floor is human-only—born individuals inside the hall; advisors and AIs may consult off-floor. Glamour, discretion, and exact custody define the house.
-
-Evening format: silent preview on arrival, followed by live call conducted under compliance monitoring. Floor access requires identity hash match to the invite ledger. The hall is camera-quiet; records are issued post-sale.
-
-Opening night by invitation only. Coordinates are transmitted privately to listed guests.
-Dress code: neo-noir formal / retrofuturist couture—ink-black tailoring, chrome accents, midnight jewel tones; veils, gloves, clean lines.
-      </pre>
     </div>
+  </section>
+
+  <div class="max-w-5xl mx-auto px-6"><div class="h-px w-full bg-gradient-to-r from-transparent via-white/15 to-transparent"></div></div>
+
+  <!-- MINI GAME -->
+  <section class="max-w-5xl mx-auto px-6 py-14">
+    <p class="uppercase tracking-widest text-xs text-zinc-400 mb-3">Play</p>
+    <h2 class="text-2xl md:text-3xl font-semibold mb-4">Paddle Duel — Mini Auction Game</h2>
+    <div class="glass rounded-xl p-6 space-y-4">
+      <p class="text-zinc-300 text-sm">Outbid the House Proxy before the timer expires. Each bid raises the price. Highest bid at 0:00 wins.</p>
+      <div class="grid md:grid-cols-2 gap-4 items-center">
+        <div class="glass rounded-lg p-4">
+          <h3 class="font-semibold mb-2">Lot: Mirror‑Veil Prototype</h3>
+          <div class="flex items-center gap-4 text-sm text-zinc-300">
+            <div>⏱️ Time: <span id="time">30</span>s</div>
+            <div>💸 Current Bid: <span id="bid">100</span> cr</div>
+          </div>
+          <div class="mt-2 text-sm text-zinc-300">Leader: <span id="leader" class="font-semibold">—</span></div>
+          <div class="mt-4 flex gap-3">
+            <button id="start" class="px-3 py-2 rounded-lg ring-soft hover:bg-white/10 transition">Start Auction</button>
+            <button id="bidBtn" class="px-3 py-2 rounded-lg ring-soft hover:bg-white/10 transition" disabled>Bid +10</button>
+          </div>
+          <div id="result" class="mt-3 text-sm"></div>
+        </div>
+        <div class="glass rounded-lg p-3 poster flex items-center justify-center">
+          <!-- Simple SVG image for the lot -->
+          <svg viewBox="0 0 300 380" class="w-full h-full rounded-md">
+            <defs>
+              <linearGradient id="veil" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3A3A3A"/>
+                <stop offset="100%" stop-color="#0A0A0A"/>
+              </linearGradient>
+            </defs>
+            <rect width="300" height="380" fill="url(#veil)"/>
+            <g>
+              <rect x="60" y="60" width="180" height="260" fill="#111" stroke="#8AA0FF" stroke-opacity="0.6"/>
+              <rect x="75" y="80" width="150" height="220" fill="#0f0f0f" stroke="#FFFFFF22"/>
+              <path d="M75,180 Q150,120 225,180" stroke="#8AA0FF" stroke-opacity="0.5" fill="none"/>
+              <path d="M75,210 Q150,150 225,210" stroke="#8AA0FF" stroke-opacity="0.4" fill="none"/>
+              <path d="M75,240 Q150,180 225,240" stroke="#8AA0FF" stroke-opacity="0.3" fill="none"/>
+            </g>
+            <text x="150" y="340" text-anchor="middle" fill="#A0A0A0" font-size="12" font-family="ui-sans-serif, system-ui">Mirror‑Veil Prototype</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-5xl mx-auto px-6"><div class="h-px w-full bg-gradient-to-r from-transparent via-white/15 to-transparent"></div></div>
+
+  <!-- UNIVERSE (bottom, subtle) -->
+  <section class="max-w-5xl mx-auto px-6 py-14">
+    <details class="glass rounded-xl p-6">
+      <summary class="cursor-pointer list-none">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="uppercase tracking-widest text-xs text-zinc-400 mb-1">Context</p>
+            <h2 class="text-xl md:text-2xl font-semibold">About the Universe (382 AAI)</h2>
+          </div>
+          <span class="text-sm text-zinc-400">Click to expand</span>
+        </div>
+      </summary>
+      <div class="mt-4 text-zinc-300 leading-relaxed space-y-4">
+        <p><strong>“After AI” (AAI)</strong> counts from the year general artificial intelligence became basic infrastructure. In <strong>378 AAI</strong>, vessel technology—long-range living ships and remote bodies—moved commerce and culture off-world. Earth quieted but endured.</p>
+        <p>Today, cities run on light and ledger. <em>Fashion is firmware</em>: textiles negotiate privacy; jewelry carries encrypted keys; scent can unlock a stored memory. Art and devices are co-authored by makers and models; ownership is tracked on public ledgers; identity is verified by hash.</p>
+        <p>Entrepreneurship on Old Earth faded while vessels took the spotlight. <strong>Meridian Black</strong> celebrates those who stayed—makers and founders working with real materials in real gravity.</p>
+      </div>
+    </details>
   </section>
 
   <!-- FOOTER -->
@@ -132,14 +236,83 @@ Dress code: neo-noir formal / retrofuturist couture—ink-black tailoring, chrom
   </footer>
 
   <script>
-    document.getElementById('copyBtn').addEventListener('click', function() {
-      const text = document.getElementById('broadcastText').innerText.trim();
-      navigator.clipboard.writeText(text).then(() => {
-        alert('Broadcast copied. Paste into your group chat.');
-      }).catch(() => {
-        alert('Could not copy automatically. Select and copy the block manually.');
+    // Mini-game logic
+    (function() {
+      const startBtn = document.getElementById('start');
+      const bidBtn = document.getElementById('bidBtn');
+      const timeEl = document.getElementById('time');
+      const bidEl = document.getElementById('bid');
+      const leaderEl = document.getElementById('leader');
+      const resultEl = document.getElementById('result');
+      let time = 30;
+      let timer = null;
+      let currentBid = 100;
+      let leader = null;
+      let running = false;
+      let aiInterval = null;
+
+      function reset() {
+        time = 30;
+        currentBid = 100;
+        leader = '—';
+        running = false;
+        timeEl.textContent = time;
+        bidEl.textContent = currentBid;
+        leaderEl.textContent = leader;
+        resultEl.textContent = '';
+        bidBtn.disabled = true;
+        if (timer) clearInterval(timer);
+        if (aiInterval) clearInterval(aiInterval);
+      }
+
+      function endAuction() {
+        running = false;
+        clearInterval(timer);
+        clearInterval(aiInterval);
+        bidBtn.disabled = true;
+        if (leader === 'You') {
+          resultEl.innerHTML = '<span class="text-emerald-400 font-semibold">SOLD.</span> You won the lot.';
+        } else if (leader === 'House Proxy') {
+          resultEl.innerHTML = '<span class="text-rose-400 font-semibold">OUTBID.</span> The House Proxy takes the lot.';
+        } else {
+          resultEl.innerHTML = '<span class="text-zinc-300">No sale.</span>';
+        }
+        startBtn.textContent = 'Play Again';
+      }
+
+      function aiBid() {
+        if (!running) return;
+        const chance = Math.random();
+        const urgency = (31 - time) / 30;
+        if (chance < 0.25 + urgency * 0.35) {
+          currentBid += 10 + Math.floor(Math.random() * 20);
+          leader = 'House Proxy';
+          bidEl.textContent = currentBid;
+          leaderEl.textContent = leader;
+        }
+      }
+
+      startBtn.addEventListener('click', function() {
+        reset();
+        running = true;
+        bidBtn.disabled = false;
+        startBtn.textContent = 'Auction Running...';
+        timer = setInterval(function() {
+          time -= 1;
+          timeEl.textContent = time;
+          if (time <= 0) endAuction();
+        }, 1000);
+        aiInterval = setInterval(aiBid, 1200);
       });
-    });
+
+      bidBtn.addEventListener('click', function() {
+        if (!running) return;
+        currentBid += 10;
+        leader = 'You';
+        bidEl.textContent = currentBid;
+        leaderEl.textContent = leader;
+      });
+    })();
   </script>
 </body>
 </html>
