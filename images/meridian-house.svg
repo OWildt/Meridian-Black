@@ -1,0 +1,13 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="frame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A0A0A"/>
+      <stop offset="100%" stop-color="#000"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#frame)"/>
+  <polygon points="150,600 400,100 650,600" fill="#0F0F0F" stroke="#1e1e1e"/>
+  <rect x="280" y="280" width="240" height="180" fill="#000" stroke="#2A2A2A"/>
+  <text x="400" y="380" text-anchor="middle" fill="#8AA0FF" font-size="48" font-family="ui-sans-serif, system-ui" letter-spacing="2">MERIDIAN</text>
+  <text x="400" y="430" text-anchor="middle" fill="#8AA0FF" font-size="48" font-family="ui-sans-serif, system-ui" letter-spacing="2">BLACK</text>
+</svg>
