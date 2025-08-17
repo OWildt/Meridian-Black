@@ -261,6 +261,8 @@
         leaderEl.textContent = leader;
         resultEl.textContent = '';
         bidBtn.disabled = true;
+        startBtn.disabled = false;
+        startBtn.textContent = 'Start Auction';
         if (timer) clearInterval(timer);
         if (aiInterval) clearInterval(aiInterval);
       }
@@ -278,6 +280,7 @@
           resultEl.innerHTML = '<span class="text-zinc-300">No sale.</span>';
         }
         startBtn.textContent = 'Play Again';
+        startBtn.disabled = false;
       }
 
       function aiBid() {
@@ -297,6 +300,7 @@
         running = true;
         bidBtn.disabled = false;
         startBtn.textContent = 'Auction Running...';
+        startBtn.disabled = true;
         timer = setInterval(function() {
           time -= 1;
           timeEl.textContent = time;
