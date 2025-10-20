@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 960" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#101c3d" />
+      <stop offset="60%" stop-color="#1a345b" />
+      <stop offset="100%" stop-color="#050910" />
+    </linearGradient>
+    <linearGradient id="glow1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#76e0ff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#76e0ff" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="glow2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff6bea" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ff6bea" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="glow3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9c7bff" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#9c7bff" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="coat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#284660" />
+      <stop offset="100%" stop-color="#112030" />
+    </linearGradient>
+    <linearGradient id="dress" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c2438" />
+      <stop offset="100%" stop-color="#05070b" />
+    </linearGradient>
+    <filter id="soft">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.8" />
+    </filter>
+  </defs>
+  <rect width="640" height="960" fill="url(#sky)" />
+  <!-- distant towers -->
+  <g opacity="0.55">
+    <rect x="60" y="160" width="50" height="520" fill="#1f3259" />
+    <rect x="130" y="120" width="36" height="420" fill="#22386b" />
+    <rect x="220" y="90" width="54" height="580" fill="#1a274a" />
+    <rect x="320" y="140" width="46" height="460" fill="#1b2c4f" />
+    <rect x="400" y="110" width="60" height="600" fill="#172449" />
+    <rect x="500" y="150" width="48" height="520" fill="#17294a" />
+  </g>
+  <!-- neon panels -->
+  <g filter="url(#soft)">
+    <rect x="95" y="200" width="32" height="110" fill="url(#glow1)" />
+    <rect x="165" y="240" width="26" height="160" fill="url(#glow2)" />
+    <rect x="250" y="190" width="30" height="140" fill="url(#glow3)" />
+    <rect x="340" y="260" width="28" height="120" fill="url(#glow1)" />
+    <rect x="430" y="210" width="24" height="150" fill="url(#glow2)" />
+    <rect x="520" y="250" width="34" height="130" fill="url(#glow3)" />
+  </g>
+  <!-- balcony -->
+  <rect x="0" y="720" width="640" height="36" fill="#192638" />
+  <rect x="0" y="780" width="640" height="16" fill="#30425e" />
+  <rect x="0" y="840" width="640" height="120" fill="#050910" opacity="0.8" />
+  <!-- Jacob -->
+  <g transform="translate(340 420)">
+    <rect x="50" y="120" width="120" height="300" rx="34" fill="url(#coat)" stroke="#3ad5ff" stroke-width="2" opacity="0.7" />
+    <rect x="78" y="20" width="64" height="140" rx="24" fill="url(#coat)" opacity="0.85" />
+    <rect x="88" y="-32" width="44" height="72" rx="22" fill="#a7b9d2" opacity="0.8" />
+    <path d="M78,190 h64 v110 h-64z" fill="#101a26" opacity="0.85" />
+    <path d="M110,180 h30 l30,160 h-60z" fill="#1b2e42" opacity="0.9" />
+    <path d="M86,180 h-24 l-22,150 h46z" fill="#1f3246" opacity="0.9" />
+  </g>
+  <!-- Namin -->
+  <g transform="translate(220 470)">
+    <rect x="-120" y="60" width="96" height="240" rx="40" fill="url(#dress)" opacity="0.95" />
+    <rect x="-110" y="-60" width="76" height="160" rx="34" fill="#0d131f" opacity="0.9" />
+    <rect x="-98" y="-120" width="60" height="90" rx="30" fill="#202b3f" opacity="0.9" />
+    <rect x="-88" y="190" width="40" height="120" rx="20" fill="#9fb4c9" opacity="0.7" />
+    <rect x="-136" y="260" width="44" height="120" rx="18" fill="#222f44" opacity="0.85" />
+    <rect x="-70" y="260" width="44" height="120" rx="18" fill="#1a263a" opacity="0.85" />
+  </g>
+  <!-- Embrace -->
+  <path d="M360 560 c40 -60 120 -60 160 0" fill="none" stroke="#3ad5ff" stroke-width="6" stroke-linecap="round" opacity="0.6" />
+  <path d="M210 580 c30 -110 160 -120 210 -30" fill="none" stroke="#ff6bea" stroke-width="5" stroke-linecap="round" opacity="0.5" />
+</svg>
