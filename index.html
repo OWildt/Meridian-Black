@@ -168,9 +168,9 @@
     </div>
   </footer>
   <script>
-    // Countdown to 8 Nov 18:00
+    // Countdown to 8 Nov 18:00 CET (Europe/Copenhagen winter time)
     (function() {
-      const target = new Date(2000 + 25, 10, 8);
+      const target = new Date(Date.UTC(2024, 10, 8, 17, 0, 0));
       const el = document.getElementById('countdown');
       if (!el) return;
       function update() {
